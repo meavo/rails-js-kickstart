@@ -30,7 +30,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Anonymous, self invoking functions
+
+#### requestAnimationFrame.js
+
+Anonymous, self invoking function with a polyfill for requestAnimationFrame.
+
+#### jquery.resize.js
+
+Anonymous, self invoking function to handle $(window).resize() event once. This event is throttled and only fires on "resizeReady".
+
+#### jquery.scroll.js
+
+Anonymous, self invoking function to handle $(window).resize() event. 
+
+### Plugin utilities
+
+To make some bits of code reusable between plugins without actually creating a plugin, I've created a pattern with which the following utilities can easily be used:
+
+### jquery.inView.js
+
+Checks if an element is visible within the current viewport. Once it is an inViewHandler method within the plugin can be defined which to describe plugin specific functionality.
+
+### jquery.stateFits.js
+
+Components often have state classes, e.g. is-large, is-medium and is-small. This utility checks for each state if it "fits" within the current context. From large to small it will apply the state class until a state which fits is found.
+
 
 ## Development
 
