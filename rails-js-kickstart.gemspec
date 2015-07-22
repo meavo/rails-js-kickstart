@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Basic JS setup for #Mangrove projects.}
   spec.description   = %q{At this moment the setup contains: requestAnimationFrame polyfill, window resize utility (listens to window resize, throttles and fires an event), window scroll utility (same as previous for window scroll), inview utility (fires if an element is visible in the current viewport) and a statefits utility (loop through a given set of CSS classes if they "fit" in their current context).}
   spec.homepage      = "https://github.com/meavo/rails-js-kickstart"
+  spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
