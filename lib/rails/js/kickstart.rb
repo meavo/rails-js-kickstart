@@ -3,7 +3,7 @@ require "rails/js/kickstart/version"
 module Rails
   module Js
     module Kickstart
-      # Your code goes here...
+      class Engine < ::Rails::Engine; end
     end
   end
 end
